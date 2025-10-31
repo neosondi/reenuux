@@ -2,15 +2,15 @@
 <odoo>
     <data>
 
-        <!-- Tree View -->
-        <record id="view_scout_progression_tree" model="ir.ui.view">
-            <field name="name">scout.progression.tree</field>
+        <!-- List View -->
+        <record id="view_scout_progression_list" model="ir.ui.view">
+            <field name="name">scout.progression.list</field>
             <field name="model">scout.progression</field>
             <field name="arch" type="xml">
-                <tree string="Progression Steps">
+                <list string="Progression Steps">
                     <field name="name"/>
                     <field name="badge_id"/>
-                </tree>
+                </list>
             </field>
         </record>
 

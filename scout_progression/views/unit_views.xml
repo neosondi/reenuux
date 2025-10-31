@@ -2,15 +2,15 @@
 <odoo>
     <data>
 
-        <!-- Tree View -->
-        <record id="view_scout_unit_tree" model="ir.ui.view">
-            <field name="name">scout.unit.tree</field>
+        <!-- List View -->
+        <record id="view_scout_unit_list" model="ir.ui.view">
+            <field name="name">scout.unit.list</field>
             <field name="model">scout.unit</field>
             <field name="arch" type="xml">
-                <tree string="Units">
+                <list string="Units">
                     <field name="name"/>
                     <field name="leader_id"/>
-                </tree>
+                </list>
             </field>
         </record>
 

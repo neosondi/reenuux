@@ -2,14 +2,14 @@
 <odoo>
     <data>
 
-        <!-- Tree View -->
-        <record id="view_scout_badge_tree" model="ir.ui.view">
-            <field name="name">scout.badge.tree</field>
+        <!-- List View -->
+        <record id="view_scout_badge_list" model="ir.ui.view">
+            <field name="name">scout.badge.list</field>
             <field name="model">scout.badge</field>
             <field name="arch" type="xml">
-                <tree string="Badges">
+                <list string="Badges">
                     <field name="name"/>
-                </tree>
+                </list>
             </field>
         </record>
 
