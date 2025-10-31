@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Main Menu -->
+        <menuitem id="scout_progression_root" name="Scout Progression" sequence="10"/>
+
+        <!-- Scouts Menu -->
+        <menuitem id="scout_scout_menu" name="Scouts" parent="scout_progression_root" action="action_scout_scout"/>
+
+        <!-- Units Menu -->
+        <menuitem id="scout_unit_menu" name="Units" parent="scout_progression_root" action="action_scout_unit"/>
+
+        <!-- Progression Menu -->
+        <menuitem id="scout_progression_menu" name="Progression" parent="scout_progression_root" action="action_scout_progression"/>
+
+        <!-- Badges Menu -->
+        <menuitem id="scout_badge_menu" name="Badges" parent="scout_progression_root" action="action_scout_badge"/>
+
+        <!-- Actions -->
+        <record id="action_scout_scout" model="ir.actions.act_window">
+            <field name="name">Scouts</field>
+            <field name="res_model">scout.scout</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="action_scout_unit" model="ir.actions.act_window">
+            <field name="name">Units</field>
+            <field name="res_model">scout.unit</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="action_scout_progression" model="ir.actions.act_window">
+            <field name="name">Progression</field>
+            <field name="res_model">scout.progression</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="action_scout_badge" model="ir.actions.act_window">
+            <field name="name">Badges</field>
+            <field name="res_model">scout.badge</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>

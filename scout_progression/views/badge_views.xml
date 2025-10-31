@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Tree View -->
+        <record id="view_scout_badge_tree" model="ir.ui.view">
+            <field name="name">scout.badge.tree</field>
+            <field name="model">scout.badge</field>
+            <field name="arch" type="xml">
+                <tree string="Badges">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Form View -->
+        <record id="view_scout_badge_form" model="ir.ui.view">
+            <field name="name">scout.badge.form</field>
+            <field name="model">scout.badge</field>
+            <field name="arch" type="xml">
+                <form string="Badge">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="description"/>
+                            <field name="image" widget="image"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>

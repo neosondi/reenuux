@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_scout_scout,scout.scout,model_scout_scout,base.group_user,1,1,1,1
+access_scout_unit,scout.unit,model_scout_unit,base.group_user,1,1,1,1
+access_scout_progression,scout.progression,model_scout_progression,base.group_user,1,1,1,1
+access_scout_badge,scout.badge,model_scout_badge,base.group_user,1,1,1,1

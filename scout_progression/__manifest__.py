@@ -1,0 +1,20 @@
+{
+    'name': 'Scout Progression',
+    'version': '1.0',
+    'summary': 'Manage scout progression steps and badges',
+    'description': 'A module to manage scout progression, including steps and badges for a scout unit.',
+    'author': 'Jules',
+    'website': 'https://github.com/Path-to-your-repo',
+    'category': 'Extra Tools',
+    'depends': ['base'],
+    'data': [
+        'security/ir.model.access.csv',
+        'views/scout_views.xml',
+        'views/unit_views.xml',
+        'views/progression_views.xml',
+        'views/badge_views.xml',
+        'views/menus.xml',
+    ],
+    'installable': True,
+    'application': True,
+}
